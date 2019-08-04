@@ -52,7 +52,7 @@
         <H5> {{ msg }}</H5>
         <div class="demo">
             <audio controls :src="getCurrentMusic" autoplay="autoplay" loop="loop" preload="auto"></audio>
-            <marquee behavior=alternate> <img src="../assets/img/2ae.gif" alt=""></marquee>
+            <marquee behavior=alternate> <img src="./assets/img/2ae.gif" alt=""></marquee>
             <ul v-for='(item,index) in musicData'>
                 <li>
                     {{ item.id }} (●'◡'●)----歌名： {{ item.name }}</li><br>
@@ -65,7 +65,7 @@
             </ul>
         </div>
     </div>
-    <script src="../assets/vue.js"></script>
+    <script src="./assets/vue.js"></script>
 
     <script>
         var musicData = [{
