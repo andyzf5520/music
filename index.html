@@ -51,8 +51,11 @@
 
         <H5> {{ msg }}</H5>
         <div class="demo">
+		<div>
+		 <a href="./code.html">黑客帝国</a>
+		</div>
             <audio controls :src="getCurrentMusic" autoplay="autoplay" loop="loop" preload="auto"></audio>
-            <marquee behavior=alternate> <img src="../assets/img/2ae.gif" alt=""></marquee>
+            <marquee behavior=alternate> <img src="./assets/img/2ae.gif" alt=""></marquee>
             <ul v-for='(item,index) in musicData'>
                 <li>
                     {{ item.id }} (●'◡'●)----歌名： {{ item.name }}</li><br>
@@ -65,52 +68,28 @@
             </ul>
         </div>
     </div>
-    <script src="../assets/vue.js"></script>
+    <script src="./assets/vue.js"></script>
 
     <script>
         var musicData = [{
             id: 1,
             name: "死性不改",
-            songsrc: '../assets/娃娃鱼死性不改.mp3',
+            songsrc: './assets/娃娃鱼死性不改.mp3',
             author: '娃娃鱼',
-            img: "../assets/img/1.jpg"
+            img: "./assets/img/1.jpg"
         }, {
             id: 2,
-            name: "其实我介意--2080丽娜",
-            songsrc: '../assets/其实我介意--2080丽娜.mp3',
-            author: '2080丽娜',
-            img: "../assets/img/2.jpg"
+            name: "范玮琪-最重要的决定",
+            songsrc: './assets/范玮琪-最重要的决定.mp3',
+            author: '范玮琪',
+            img: "./assets/img/2.jpg"
         }, {
             id: 3,
-            name: "范玮琪-最重要的决定",
-            songsrc: '../assets/范玮琪-最重要的决定.mp3',
-            author: '范玮琪',
-            img: "../assets/img/3.jpg"
-        }, {
-            id: 4,
             name: "部落格老师教唱小小鸟",
-            songsrc: '../assets/部落格老师教唱小小鸟.mp3',
+            songsrc: './assets/部落格老师教唱小小鸟.mp3',
             author: 'YY魔音-安迪',
-            img: "../assets/img/4.jpg"
-        }, {
-            id: 5,
-            name: "金海心 - 那么骄傲",
-            songsrc: '../assets/金海心 - 那么骄傲.mp3',
-            author: '金海心',
-            img: "../assets/img/5.jpg"
-        }, {
-            id: 6,
-            name: "范玮琪 - 可不可以不勇敢.mp3",
-            songsrc: '../assets/范玮琪 - 可不可以不勇敢.mp3',
-            author: '范玮琪',
-            img: "../assets/img/6.jpg"
-        }, {
-            id: 7,
-            name: "范玮琪 - 一个像夏天 一个像秋天",
-            songsrc: '../assets/范玮琪 - 一个像夏天一个像秋天.mp3',
-            author: '范玮琪',
-            img: "../assets/img/7.jpg"
-        }, ];
+            img: "./assets/img/3.jpg"
+        },  ];
         new Vue({
             el: '#app',
             data: {
